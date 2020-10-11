@@ -74,3 +74,13 @@ and
 ```bash
 cd online-platform-devc
 ```
+
+After that you can run yarn or npm install to intsall dependencies for the application
+
+```bash
+// When you use yarn as your default package manager
+yarn
+
+// when you use npm as your default package manager
+npm install
+```
