@@ -66,7 +66,7 @@ Browse to <https://localhost:8000> to view the documentation while you are editi
 Before you can build you **MUST**:
 
 ```bash
-git clone ...
+git clone https://github.com/TawandaMavondo/online-platform-devc.git
 ```
 
 and
