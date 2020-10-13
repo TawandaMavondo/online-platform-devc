@@ -10,10 +10,7 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "challengeName": {
-      "type": "string"
-    },
-    "Content": {
+    "content": {
       "type": "richtext"
     }
   }

@@ -522,10 +522,7 @@
           "id": {
             "type": "string"
           },
-          "challengeName": {
-            "type": "string"
-          },
-          "Content": {
+          "content": {
             "type": "string"
           },
           "published_at": {
@@ -535,10 +532,7 @@
       },
       "NewChallenges": {
         "properties": {
-          "challengeName": {
-            "type": "string"
-          },
-          "Content": {
+          "content": {
             "type": "string"
           },
           "published_at": {

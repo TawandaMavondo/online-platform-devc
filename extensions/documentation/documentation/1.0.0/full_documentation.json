@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "10/12/2020 8:26:12 PM"
+    "x-generation-date": "10/13/2020 10:09:06 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -2665,10 +2665,7 @@
           "id": {
             "type": "string"
           },
-          "challengeName": {
-            "type": "string"
-          },
-          "Content": {
+          "content": {
             "type": "string"
           },
           "published_at": {
@@ -2678,10 +2675,7 @@
       },
       "NewChallenges": {
         "properties": {
-          "challengeName": {
-            "type": "string"
-          },
-          "Content": {
+          "content": {
             "type": "string"
           },
           "published_at": {
