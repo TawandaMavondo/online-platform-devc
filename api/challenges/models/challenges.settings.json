@@ -12,6 +12,10 @@
   "attributes": {
     "content": {
       "type": "richtext"
+    },
+    "category": {
+      "via": "challenges",
+      "collection": "categories"
     }
   }
 }

@@ -1,18 +1,18 @@
 {
   "paths": {
-    "/challenges": {
+    "/categories": {
       "get": {
         "deprecated": false,
-        "description": "Find all the challenges's records",
+        "description": "Find all the categories's records",
         "responses": {
           "200": {
-            "description": "Retrieve challenges document(s)",
+            "description": "Retrieve categories document(s)",
             "content": {
               "application/json": {
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Challenges"
+                    "$ref": "#/components/schemas/Categories"
                   }
                 }
               }
@@ -51,7 +51,7 @@
         },
         "summary": "",
         "tags": [
-          "Challenges"
+          "Categories"
         ],
         "parameters": [
           {
@@ -194,14 +194,14 @@
       },
       "post": {
         "deprecated": false,
-        "description": "Create a new challenges record",
+        "description": "Create a new categories record",
         "responses": {
           "200": {
-            "description": "Retrieve challenges document(s)",
+            "description": "Retrieve categories document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Challenges"
+                  "$ref": "#/components/schemas/Categories"
                 }
               }
             }
@@ -239,7 +239,7 @@
         },
         "summary": "",
         "tags": [
-          "Challenges"
+          "Categories"
         ],
         "requestBody": {
           "description": "",
@@ -247,20 +247,20 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewChallenges"
+                "$ref": "#/components/schemas/NewCategories"
               }
             }
           }
         }
       }
     },
-    "/challenges/count": {
+    "/categories/count": {
       "get": {
         "deprecated": false,
-        "description": "Retrieve the numver of challenges documents",
+        "description": "Retrieve the numver of categories documents",
         "responses": {
           "200": {
-            "description": "Retrieve challenges document(s)",
+            "description": "Retrieve categories document(s)",
             "content": {
               "application/json": {
                 "schema": {
@@ -306,22 +306,22 @@
         },
         "summary": "",
         "tags": [
-          "Challenges"
+          "Categories"
         ],
         "parameters": []
       }
     },
-    "/challenges/{id}": {
+    "/categories/{id}": {
       "get": {
         "deprecated": false,
-        "description": "Find one challenges record",
+        "description": "Find one categories record",
         "responses": {
           "200": {
-            "description": "Retrieve challenges document(s)",
+            "description": "Retrieve categories document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Challenges"
+                  "$ref": "#/components/schemas/Categories"
                 }
               }
             }
@@ -359,7 +359,7 @@
         },
         "summary": "",
         "tags": [
-          "Challenges"
+          "Categories"
         ],
         "parameters": [
           {
@@ -376,14 +376,14 @@
       },
       "put": {
         "deprecated": false,
-        "description": "Update a single challenges record",
+        "description": "Update a single categories record",
         "responses": {
           "200": {
-            "description": "Retrieve challenges document(s)",
+            "description": "Retrieve categories document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Challenges"
+                  "$ref": "#/components/schemas/Categories"
                 }
               }
             }
@@ -421,7 +421,7 @@
         },
         "summary": "",
         "tags": [
-          "Challenges"
+          "Categories"
         ],
         "requestBody": {
           "description": "",
@@ -429,7 +429,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewChallenges"
+                "$ref": "#/components/schemas/NewCategories"
               }
             }
           }
@@ -449,10 +449,10 @@
       },
       "delete": {
         "deprecated": false,
-        "description": "Delete a single challenges record",
+        "description": "Delete a single categories record",
         "responses": {
           "200": {
-            "description": "deletes a single challenges based on the ID supplied",
+            "description": "deletes a single categories based on the ID supplied",
             "content": {
               "application/json": {
                 "schema": {
@@ -495,7 +495,7 @@
         },
         "summary": "",
         "tags": [
-          "Challenges"
+          "Categories"
         ],
         "parameters": [
           {
@@ -514,32 +514,32 @@
   },
   "components": {
     "schemas": {
-      "Challenges": {
+      "Categories": {
         "required": [
-          "id"
+          "id",
+          "Name"
         ],
         "properties": {
           "id": {
             "type": "string"
           },
-          "content": {
+          "Name": {
             "type": "string"
           },
-          "category": {
+          "challenges": {
             "type": "array",
             "items": {
               "required": [
-                "id",
-                "Name"
+                "id"
               ],
               "properties": {
                 "id": {
                   "type": "string"
                 },
-                "Name": {
+                "content": {
                   "type": "string"
                 },
-                "challenges": {
+                "category": {
                   "type": "array",
                   "items": {
                     "type": "string"
@@ -562,12 +562,15 @@
           }
         }
       },
-      "NewChallenges": {
+      "NewCategories": {
+        "required": [
+          "Name"
+        ],
         "properties": {
-          "content": {
+          "Name": {
             "type": "string"
           },
-          "category": {
+          "challenges": {
             "type": "array",
             "items": {
               "type": "string"
@@ -588,7 +591,7 @@
   },
   "tags": [
     {
-      "name": "Challenges"
+      "name": "Categories"
     }
   ]
 }
