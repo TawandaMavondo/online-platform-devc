@@ -557,6 +557,9 @@
               }
             }
           },
+          "title": {
+            "type": "string"
+          },
           "published_at": {
             "type": "datetime"
           }
@@ -572,6 +575,9 @@
             "items": {
               "type": "string"
             }
+          },
+          "title": {
+            "type": "string"
           },
           "published_at": {
             "type": "datetime"

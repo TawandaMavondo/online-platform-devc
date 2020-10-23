@@ -545,6 +545,9 @@
                     "type": "string"
                   }
                 },
+                "title": {
+                  "type": "string"
+                },
                 "published_at": {
                   "type": "datetime"
                 },
